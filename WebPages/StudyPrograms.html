@@ -12,12 +12,25 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../Style/HomePageCSS.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../Style/FooterCSS.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../Style/WebPagesCSS.css">
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script> 
+        $(function(){
+          $("#header").load("../Includes/Header.html"); 
+          $("#topbtn").load("../Includes/TopButton.html");
+          $("#footer").load("../Includes/Footer.html"); 
+        });
+    </script>
     <script src="../JS/BurgerJS.js"></script>
     <script src="../JS/HomePageJS.js"></script>
 </head>
 <body>
     <!-- Header -->
-    <?php require "../Includes/Header.html"; ?>
+    <div id="header"></div>
 
     <section class="Articles-content section-a" id="Articlescontent">
         <h1>תוכניות לימודים</h1>
@@ -218,10 +231,10 @@
     </section>
 
     <!-- To Top Button -->
-    <?php include "../Includes/TopButton.html"; ?>
+    <div id="topbtn"></div>
 
     <!-- Footer -->
-     <?php require "../Includes/Footer.html" ?>
+    <div id="footer"></div>
      
 </body>
 </html>
