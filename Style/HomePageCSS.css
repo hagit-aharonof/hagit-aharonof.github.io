@@ -272,8 +272,6 @@ main {
     font-family: var(--mainfont);
 }
 
-.contact > textarea {}
-
 /* top button */
 .totop {
     position: fixed;
