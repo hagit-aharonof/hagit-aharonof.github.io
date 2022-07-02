@@ -1,0 +1,141 @@
+a {
+    color: var(--lightred);
+    transition: 200ms ease;
+    -o-transition: 200ms ease;
+    -ms-transition: 200ms ease;
+    -moz-transition: 200ms ease;
+    -webkit-transition: 200ms ease;
+}
+
+a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    text-align: justify;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+li {
+    text-align: justify;
+    margin: 0;
+    padding: 20px 0 0 0;
+}
+
+label {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 1.8rem;
+}
+
+h2 {
+    color: white;
+    font-weight: bolder;
+    padding: 1rem 2rem;
+    background: var(--blue);
+    border-radius: 10px;
+    margin: 50px 0;
+    width: fit-content;
+}
+
+h3 {
+    text-align: center;
+    background: white;
+    color: var(--blue);
+    width: fit-content;
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    margin: 50px 0 50px 0;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.ytiframe {
+    width: 100%;
+    height: 80vh;
+}
+
+.black {
+    color: black;
+}
+
+.red {
+    color: var(--red);
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.secondblue {
+    color: var(--secondblue);
+}
+
+.lightblue {
+    color: var(--lightblue);
+}
+
+.nonbackground {
+    background: none;
+}
+
+/* Hero on Others Page */
+.bookimg {
+    width: 200px;
+    height: auto;
+    box-shadow: var(--shadow);
+    border-radius: 20px;
+}
+
+.h3-link {
+    color: black;
+}
+
+.h3-link:hover {
+    color: var(--grey);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* CBooks Button */
+.backtocbooks {
+    position: fixed;
+    top: 15vh;
+    right: 2vw;
+    font-weight: bold;
+    color: white;
+    background: #333;
+    border: 1.5px solid white;
+    padding: 1rem 2rem;
+    opacity: 0.5;
+}
+
+.backtocbooks:hover {
+    color: #333;
+    background: white;
+    border: 1.5px solid #333;
+    opacity: 1;
+}
+
+/* Articles Content */
+/* 
+.Articles-content > h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+} */

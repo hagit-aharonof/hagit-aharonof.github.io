@@ -1,0 +1,318 @@
+/* Global Variables */
+:root {
+    --mainfont: 'Calibri';
+    /*--shadow: 2px 2px 10px #999;*/
+    --backgroundcolor: #f6f3ec;
+    --black: #373737;
+    --blue: #1f5b86;
+    --secondblue: #225470;
+    --lightblue: #629dc7;
+    --grey: #c7c7c7;
+    --lightgrey: #ebebeb;
+    --verylightgrey: #f7f7f7;
+    --gold: #ad9649;
+    --orange: #f3dc5d;
+    --red: #a13a3d;
+    --lightred: #bb4145;
+    --lighterred: hsl(358, 78%, 75%, 20%);
+}
+
+* {
+    box-sizing: border-box;
+    transition: 200ms ease;
+    -o-transition: 200ms ease;
+    -ms-transition: 200ms ease;
+    -moz-transition: 200ms ease;
+    -webkit-transition: 200ms ease;
+}
+
+html, body {
+    font-family: var(--mainfont);
+    font-weight: normal;
+    line-height: 1.5;
+    color: var(--black);
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transform-style: preserve-3d;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(#e6dbc1, var(--backgroundcolor));
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+    transition: 200ms ease;
+    -o-transition: 200ms ease;
+    -ms-transition: 200ms ease;
+    -moz-transition: 200ms ease;
+    -webkit-transition: 200ms ease;
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.section-a {
+    margin: 10%;
+    padding: 5%;
+}
+
+.section-b {
+    margin: 0 -1vw 0 -1vw;
+    padding: 100px 10% 150px 10%;
+}
+
+.padding {
+    padding: 2rem;
+}
+
+.linkicon {
+    width: 40px;
+    height: auto;
+}
+
+.hp-hr {
+    margin: 0 -1vw 0 -1vw;
+    border: 1px solid var(--lightred);
+    background: var(--lightred);
+}
+
+/* Main */
+.circle {
+    border-radius: 50%;
+    background: var(--lighterred);
+    margin: 0 20px;
+}
+
+.circle::after {
+    content: "";
+    background-image: url(../Pictures/HomePage/shb.jpg);
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+  }
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.mainbooks {
+    text-align: left;
+}
+
+.mainbooksimg {
+    width: 250px;
+    height: auto;
+    opacity: 0.7;
+}
+
+.mainslogen {
+    color: var(--red);
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.maintitle {
+    font-size: 1.8rem;
+}
+
+/* About Writer */
+.writer {
+    background: var(--lightred);
+    color: white;
+    box-shadow: var(--shadow);
+}
+
+.what-a {
+    background: var(--backgroundcolor);
+    color: black;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 10px;
+}
+
+.what-b {
+    background: var(--lightred);
+    color: white;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 10px;
+}
+
+.h2-link {
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin: 10% 30px;
+    padding: 1rem 2rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+.h2-link:hover {
+    background: none;
+    box-shadow: none;
+    color: var(--lightred);
+}
+
+.writerboxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.writerbox {
+    padding: 1rem 2rem;
+    background: var(--backgroundcolor);
+    margin: 1.5rem;
+    border-radius: 2px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.writerbox:hover {
+    margin: 0.5rem;
+}
+
+.writerbox:active {
+    background: #333;
+    color: white;
+}
+
+/* About */
+.aboutext {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 40px;
+}
+
+.profileimg {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+    background: var(--backgroundcolor);
+}
+
+/* Childrens Books */
+.cbookscontent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cbooks > h4 {
+    padding-right: 80px;
+}
+
+.cbook {
+    text-align: center;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.cbookimg {
+    width: 200px;
+    height: auto;
+    border-radius: 2px;
+    box-shadow: var(--shadow);
+}
+
+.cbookimg:hover {
+    width: 220px;
+}
+
+.hp-cbooks-title {
+    padding: 1rem 2rem;
+    background: var(--lightred);
+    opacity: 0.8;
+    color: white;
+    border-radius: 2px;
+}
+
+.contactgrid {
+    padding: 20px 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.contact > h2 {
+    margin-bottom: 50px;
+}
+
+.contact > h4 {
+    text-align: left;
+    padding-right: 5px;
+}
+
+.contact > input, textarea {
+    padding: 1rem 3rem;
+    border-radius: 2px;
+    box-shadow: none;
+    border: none;
+    font-family: var(--mainfont);
+}
+
+.contact > textarea {}
+
+/* top button */
+.totop {
+    position: fixed;
+    left: 5%;
+    bottom: 10%;
+}
+
+.totopbtn {
+    cursor: pointer;
+    width: 60px;
+    height: 50px;
+    background: white;
+    border: 1.5px solid black;
+    font-weight: 300;
+    font-size: 4rem;
+    opacity: 0.90;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: 200ms ease;
+    -o-transition: 200ms ease;
+    -ms-transition: 200ms ease;
+    -moz-transition: 200ms ease;
+    -webkit-transition: 200ms ease;
+}
+
+.totopbtn:hover {
+    opacity: 1;
+    color: var(--lightred);
+    border: 1.5px solid var(--lightred);
+}
+
+.totopbtn:active {
+    opacity: 0;
+}
+
+.margin-bottom {
+    margin-bottom: 100px;
+}
+
+.margin-top {
+    margin-top: 100px;
+}

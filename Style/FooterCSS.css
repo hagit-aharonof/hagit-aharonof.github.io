@@ -1,0 +1,47 @@
+footer {
+    text-align: center;
+    color: white;
+    background: var(--lightred);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 10% 50px 10%;
+}
+
+footer > ul > li > a, footer > ul > a {
+    color: var(--grey);
+}
+
+footer > ul > li > a:hover, footer > ul > a:hover {
+    color: white;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.left > li {
+    text-align: left;
+}
+
+.kg-logo {
+    width: 60px;
+    height: auto;
+}
+
+.facebook {
+    padding: 4px 10px;
+    margin: 0 5px;
+    border-radius: 100%;
+    background: var(--backgroundcolor);
+    color: var(--red);
+    font-weight: bold;
+}
+
+.facebook:hover {
+    background: white;
+}

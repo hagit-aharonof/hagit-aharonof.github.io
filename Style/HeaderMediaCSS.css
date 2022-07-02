@@ -1,0 +1,95 @@
+@media only screen and (max-width: 1360px) {
+    .container {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    /* Header */
+    header {
+        grid-template-columns: 1fr 5fr 1fr;
+        z-index: 4;
+        height: 120px;
+        padding: 6px 2% 0 5%;
+        position: fixed;
+        top: 0;
+    }
+
+    #logo > img {
+        padding-right: 20px;
+        height: 60px;
+        width: auto;
+        transform: rotate(15deg);
+    }
+
+    .slogen {
+        font-size: 0.9rem;
+        text-align: center;
+        letter-spacing: 0px;
+    }
+
+    .slogen:hover {
+        letter-spacing: 0px;
+        font-weight: inherit;
+    }
+
+    #burger {
+        display: inline;
+    }
+
+    .burger {
+        display: inline;
+        margin: auto;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    #navigation {
+        display: none;
+    }
+
+    .navigationabslt {
+        background: var(--backgroundcolor);
+    }
+
+    .navigation {
+        display: grid;
+        position: absolute;
+        grid-template-columns: 1fr;
+        top: 130px;
+        opacity: 0.98;
+        background: var(--backgroundcolor);
+        width: 100%;
+        margin: 0;
+        z-index: 10;
+        -webkit-animation: navbuttons 1s;
+        animation: navbuttons 1s;
+        text-align: center;
+        align-items: center;
+    }
+
+    .navigationabslt > ul {
+        background: var(--backgroundcolor);
+        width: 60%;
+    }
+
+    .headerbtn {
+        opacity: 1;
+        color: white;
+        font-weight: 500;
+        font-size: 1.2rem;
+        background: #333;
+        margin: 10px;
+        width: 200px;
+        padding: 19px 0;
+
+    }
+
+    .headerbtn:hover {
+        color: var(--blue);
+        background: white;
+    }
+
+    .headerbtn:active {
+        background: var(--blue);
+        color: white;
+    }
+}

@@ -1,0 +1,140 @@
+@media screen and (max-width: 1024px) {
+    #justify {
+        text-align: justify;
+    }
+
+    /* Home Page */
+    #circle {
+        background: hsl(358, 78%, 75%, 10%);
+        min-height: 80vh;
+    }
+
+    #main {
+        display: block;
+        min-height: 60vh;
+    }
+
+    #mainbooks {
+        text-align: center;
+    }
+
+    #mainbooksimg {
+        padding-top: 60px;
+        width: 130px;
+        height: auto;
+    }
+
+    #mainslogen {
+        color: black;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #maintitle {
+        font-size: 1.2rem;
+    }
+
+    #profileimg {
+        width: 80%;
+        margin: 50px 10% 0 10%;
+    }
+
+    #writerboxes {
+        grid-template-columns: 1fr;
+    }
+    
+    #writerbox {
+        height: 130px;
+    }
+
+    #aboutext {
+        grid-template-columns: 1fr;
+    }
+
+    #cbookscontent {
+        grid-template-columns: 1fr;
+    }
+
+    #hpcbookstitle {
+        display: block;
+        margin: 30px 0;
+    }
+
+    #htwolink {
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    #footer {
+        grid-template-columns: 1fr;
+
+    }
+
+    #footer-website-details {
+        display: none;
+    }
+
+    #footer-website-copyright {
+        display: none;
+    }
+
+    #footer-copyright {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    /* Web Pages */
+    /* Childrens Books */
+    #backtocbooks {
+        margin: auto;
+        display: block;
+        right: 10vw;
+        left: 10vw;
+        width: 80vw;
+    }
+
+    #wpmaintitle {
+        font-size: 1.2rem;
+        box-shadow: var(--shadow);
+        padding: 2rem 1rem;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    #wplinkfiles {
+        width: 100%;
+        text-align: right;
+        padding: 1rem 1rem;
+        margin: 2rem 0;
+        background: #333;
+        color: white;
+        border-radius: 0;
+    }
+
+    #wpbookimg {
+        text-align: center;
+    }
+
+    #bookimg {
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+        margin-top: -60px;
+    }
+
+    #h2-link {
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #width {
+        width: 100%;
+        text-align: right;
+    }
+
+    /* Articles */
+}
