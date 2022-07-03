@@ -113,16 +113,17 @@ h4 {
     text-decoration: underline;
 }
 
-/* CBooks Button */
 .backtocbooks {
     position: fixed;
     top: 15vh;
-    right: 2vw;
+    right: 1vw;
+    font-size: 1rem;
     font-weight: bold;
+    text-align: center;
     color: white;
     background: #333;
     border: 1.5px solid white;
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.25rem;
     opacity: 0.5;
 }
 

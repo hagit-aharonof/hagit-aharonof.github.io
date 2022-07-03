@@ -35,7 +35,6 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    transform-style: preserve-3d;
     scroll-behavior: smooth;
     background-image: linear-gradient(#e6dbc1, var(--backgroundcolor));
     scroll-behavior: smooth;
@@ -94,7 +93,7 @@ a {
 .circle {
     border-radius: 50%;
     background: var(--lighterred);
-    margin: 0 20px;
+    margin: 100px 0 20px 20px;
 }
 
 .circle::after {
@@ -132,7 +131,7 @@ main {
 }
 
 .maintitle {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 /* About Writer */
@@ -272,7 +271,6 @@ main {
     font-family: var(--mainfont);
 }
 
-/* top button */
 .totop {
     position: fixed;
     left: 5%;
@@ -281,14 +279,14 @@ main {
 
 .totopbtn {
     cursor: pointer;
-    width: 60px;
+    width: 55px;
     height: 50px;
     background: white;
     border: 1.5px solid black;
     font-weight: 300;
     font-size: 4rem;
-    opacity: 0.90;
-    border-radius: 10px;
+    opacity: 0.60;
+    border-radius: 2px;
     box-shadow: var(--shadow);
     transition: 200ms ease;
     -o-transition: 200ms ease;
@@ -313,4 +311,12 @@ main {
 
 .margin-top {
     margin-top: 100px;
+}
+
+.semi-margin-top {
+    margin-top: 50px;
+}
+
+.empty-div {
+    color: var(--backgroundcolor);
 }

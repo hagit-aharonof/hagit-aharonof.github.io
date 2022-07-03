@@ -137,17 +137,29 @@ header {
     animation: navbuttons 1s;
 }
 
+.navigationabslt > ul {
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.navigationabslt > ul > a {
+    width: 100%;
+    margin: 10px auto;
+}
+
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes navbuttons {
-    0%  {left: -0;opacity: 0.00;transform: rotate(-20deg)}
-    50% {opacity: 0.50}
+    0%  {left: -0;opacity: 0.00;transform: rotate(-10deg)}
+    50% {opacity: 0.85}
     100% {left: 0;opacity: 0.98}
 }
 
 /* Standard syntax */
 @keyframes navbuttons {
-    0%  {left: -0;opacity: 0.00;transform: rotate(-20deg)}
-    50% {opacity: 0.50}
+    0%  {left: -0;opacity: 0.00;transform: rotate(-10deg)}
+    50% {opacity: 0.85}
     100% {left: 0;opacity: 0.98}
 }
 

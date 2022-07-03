@@ -5,8 +5,9 @@
 
     /* Home Page */
     #circle {
+        margin-top: 150px;
         background: hsl(358, 78%, 75%, 10%);
-        min-height: 80vh;
+        min-height: 75vh;
     }
 
     #main {
@@ -93,10 +94,13 @@
         right: 10vw;
         left: 10vw;
         width: 80vw;
+        font-size: 1.5rem;
     }
 
-    #wpmaintitle {
+    #wpmaintitle {margin-bottom: 100px;
+        display: block;
         font-size: 1.2rem;
+        width: 100%;
         box-shadow: var(--shadow);
         padding: 2rem 1rem;
         text-align: center;
