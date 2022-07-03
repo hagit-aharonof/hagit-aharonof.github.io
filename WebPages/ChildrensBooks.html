@@ -24,6 +24,7 @@
           $("#footer").load("../Includes/Footer.html"); 
         });
     </script>
+    <script src="../Data/books_links.js"></script>
     <script src="../JS/BurgerJS.js"></script>
     <script src="../JS/HomePageJS.js"></script>
     <script src="../JS/BurgerJS.js"></script>
@@ -59,7 +60,8 @@
                     </li>
                     <li>
                         גיבור על חזקים - הפעלות לבתי ספר
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/153.pdf">דף דף מערכי שיעור</a>.
+                        <a onclick="create_doc_viewer('153')">
+                            דף דף מערכי שיעור</a>.
                     </li>
                     <li>
                         גיבור על חזקים -
@@ -71,15 +73,17 @@
                     </li> -->
                     <li>
                         גיבור על חזקים -
-                        <!-- <a target="_blank" href="https://hagit-aharonof.github.io/Documents/101.5.pdf">ספרות ילדים ונוער ,חוברת ד' סיון תשס"א יוני 2001 101.5</a>. -->
-                        <!-- <a target="_blank" href="https://drive.google.com/file/d/17FvLqWiLliDzjT5Lv3mE1Le4WTbfqLaF/view?usp=sharing">ספרות ילדים ונוער ,חוברת ד' סיון תשס"א יוני 2001 101.5</a>. -->
-                        <a target="_blank" onclick="create_doc_viewer('https://drive.google.com/file/d/17FvLqWiLliDzjT5Lv3mE1Le4WTbfqLaF/preview');">ספרות ילדים ונוער ,חוברת ד' סיון תשס"א יוני 2001 101.5</a>.
+                        <!-- <a onclick="create_doc_viewer('101.5')">
+                            ספרות ילדים ונוער ,חוברת ד' סיון תשס"א יוני 2001 101.5</a>. -->
+                        <a target="_blank" href="https://drive.google.com/file/d/17FvLqWiLliDzjT5Lv3mE1Le4WTbfqLaF/view?usp=sharing">ספרות ילדים ונוער ,חוברת ד' סיון תשס"א יוני 2001 101.5</a>.
 
-                    </li>
+                    </li>  
                     <li>
                         עבודות תלמידים לדוגמה,בביה"ס "ביאליק", קריית ביאליק, תשס"א
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/102.pdf">קובץ 1</a>
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/102.5.pdf">קובץ 2</a>.
+                        <a onclick="create_doc_viewer('102')">
+                            קובץ 1</a>
+                        <a onclick="create_doc_viewer('102.5')">
+                            קובץ 2</a>.
                     </li>
                     <ul>
                         <b>
@@ -87,9 +91,12 @@
                         </b>
                     </ul>
                     <li>
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/103.pdf">דף דף</a>
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/105.pdf">מט"ח/אתר כנפיים</a>
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/105.5.pdf">נענע</a>.
+                        <a onclick="create_doc_viewer('103')">
+                            דף דף</a>
+                        <a onclick="create_doc_viewer('105')">
+                            מט"ח/אתר כנפיים</a>
+                        <a onclick="create_doc_viewer('105.5')">
+                            נענע</a>.
                     </li>
                     <ul>
                         <b>
@@ -98,7 +105,8 @@
                     </ul>
                     <li>
                         גיבור על חזקים
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/105.8.pdf">מצעד הקריאה 2007</a>.
+                        <a onclick="create_doc_viewer('105.8')">
+                            מצעד הקריאה 2007</a>.
                     </li>
                     <li>
                         גיבור על חזקים –
@@ -127,10 +135,12 @@
                     </li>
                     <li>
                         לא רואים עליה -
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/106.pdf">ניתן לשמוע את הקלטת הספר בספריית העברים וב"אייקאסט"</a>.
+                        <a onclick="create_doc_viewer('106')">
+                            ניתן לשמוע את הקלטת הספר בספריית העברים וב"אייקאסט"</a>.
                     </li>
                     <li>
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/107.pdf">לא רואים עליה, וגיבור על חזקים ארץ בנימין 2008</a>.
+                        <a onclick="create_doc_viewer('107')">
+                            לא רואים עליה, וגיבור על חזקים ארץ בנימין 2008</a>.
                     </li>
                     <li>
                         לא רואים עליה -
@@ -182,11 +192,13 @@
                     </li>
                     <li>
                         מה זה יכול להיות?
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/109.pdf">הד הגן יוני 2009</a>.
+                        <a onclick="create_doc_viewer('109')">
+                            הד הגן יוני 2009</a>.
                     </li>
                     <li>
                         מה זה יכול להיות?
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/110.pdf">על הספר  באתר "רינונים"</a>.
+                        <a onclick="create_doc_viewer('110')">
+                            על הספר  באתר "רינונים"</a>.
                     </li>
                     <li>
                         מה זה יכול להיות?
@@ -211,15 +223,18 @@
                 <ul>
                     <li>
                         מעשה שקרה בארץ לחם -
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/113.pdf">הספר הטוב במחיר מוזל תשנ"ט.</a>
+                        <a onclick="create_doc_viewer('113')">
+                            הספר הטוב במחיר מוזל תשנ"ט.</a>
                     </li>
                     <li>
                         מעשה שקרה בארץ לחם -
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/114.pdf">ספרות ילדים ונוער דצמבר 98</a>.
+                        <a onclick="create_doc_viewer('114')">
+                            ספרות ילדים ונוער דצמבר 98</a>.
                     </li>
                     <li>
                         מעשה שקרה בארץ לחם -
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/115.pdf">עשרים שנה אחרי כתיבת הספר...המציאות עולה על כל דמיון  משאית שוקולד מתהפכת והשוקולד מתפזר על הכביש</a>.
+                        <a onclick="create_doc_viewer('115')">
+                            עשרים שנה אחרי כתיבת הספר...המציאות עולה על כל דמיון  משאית שוקולד מתהפכת והשוקולד מתפזר על הכביש</a>.
                     </li>
                 </ul>
             </div>
@@ -241,7 +256,8 @@
                     </li>
                     <li>
                         גבעת ההיפופוטם -
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/116.pdf">מעריב 12-8-83</a>.
+                        <a onclick="create_doc_viewer('116')">
+                            מעריב 12-8-83</a>.
                     </li>
                 </ul>
             </div>
@@ -259,11 +275,13 @@
                 <ul>
                     <li>
                         שתי גומות חן -
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/117.pdf">הוצאת טרקלין – מצגת הספר</a>.
+                        <a onclick="create_doc_viewer('117')">
+                            הוצאת טרקלין – מצגת הספר</a>.
                     </li>
                     <li>
                         שתי גומות חן -
-                        <a target="_blank" href="https://hagit-aharonof.github.io/Documents/118.pdf">ידיעות אחרונות 1978</a>.
+                        <a onclick="create_doc_viewer('118')">
+                            ידיעות אחרונות 1978</a>.
                     </li>
                 </ul>
             </div>

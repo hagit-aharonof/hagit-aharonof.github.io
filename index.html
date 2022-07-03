@@ -29,13 +29,14 @@
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous">
     </script>
-    <script> 
+    <script>
         $(function(){
           $("#header").load("Includes/Header.html"); 
           $("#topbtn").load("Includes/TopButton.html");
           $("#footer").load("Includes/Footer.html"); 
         });
     </script>
+    <script src="Data/books_links.js"></script>
     <script src="JS/BurgerJS.js"></script>
     <script src="JS/HomePageJS.js"></script>
 </head>
@@ -107,7 +108,7 @@
                 </a>
             </ul>
             <ul class="writerbox" id="writerbox">
-                <a href="https://hagit-aharonof.github.io/Documents/112.jpg" target="_blank">
+                <a onclick="create_doc_viewer('112')">
                 <img src="Pictures/linkicon.png" class="linkicon">
                 <br>
                     על הסופרת וספריה, מתוך "ארץ בנימין" אוקטובר 2018

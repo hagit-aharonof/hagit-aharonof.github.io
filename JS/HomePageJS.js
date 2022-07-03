@@ -16,6 +16,7 @@ function scrolltotop() {
 
 // https://drive.google.com/file/d/17FvLqWiLliDzjT5Lv3mE1Le4WTbfqLaF/preview
 function create_doc_viewer(pdf_file) {
+  pdf_file_viewer = books_links[pdf_file];
   var new_win = open('https://hagit-aharonof.github.io/WebPages/DocViewer.html','pdf viewer');
   html_to_write = `
                     <!DOCTYPE html>
@@ -27,7 +28,7 @@ function create_doc_viewer(pdf_file) {
                         <title>Document</title>
                     </head>
                     <body>
-                        <iframe src="` + pdf_file + `" width="100%" height="1000" allow="autoplay"></iframe>
+                        <iframe src="` + pdf_file_viewer + `" width="100%" height="1000" allow="autoplay"></iframe>
                     </body>
                     </html>`
   new_win.document.write(html_to_write);
