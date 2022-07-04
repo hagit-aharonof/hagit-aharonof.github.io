@@ -14,6 +14,7 @@
     --orange: #f3dc5d;
     --red: #a13a3d;
     --lightred: #bb4145;
+    --lighterred: #d17175;
     --lighterred: hsl(358, 78%, 75%, 20%);
 }
 
@@ -75,7 +76,7 @@ a {
 }
 
 .padding {
-    padding: 2rem;
+    padding: 10%;
 }
 
 .linkicon {
@@ -93,7 +94,7 @@ a {
 .circle {
     border-radius: 50%;
     background: var(--lighterred);
-    margin: 100px 0 20px 20px;
+    margin: 80px 0 20px 20px;
 }
 
 .circle::after {
@@ -163,7 +164,8 @@ main {
     font-size: 1.4rem;
     margin: 10% 30px;
     padding: 1rem 2rem;
-    background: white;
+    background: var(--lighterred);
+    color: black;
     border-radius: 5px;
     box-shadow: var(--shadow);
 }
@@ -219,33 +221,40 @@ main {
     grid-template-columns: repeat(4, 1fr);
 }
 
-.cbooks > h4 {
-    padding-right: 80px;
-}
-
 .cbook {
+    display: grid;
+    grid-template-columns: 1f;
     text-align: center;
     font-weight: bold;
     margin: 50px 0;
 }
 
 .cbookimg {
-    width: 200px;
+    display: block;
+    width: 250px;
     height: auto;
     border-radius: 2px;
     box-shadow: var(--shadow);
+    margin: auto;
 }
 
 .cbookimg:hover {
-    width: 220px;
+    opacity: 0.8;
 }
 
 .hp-cbooks-title {
+    width: 250px;
+    margin: auto;
+    display: block;
     padding: 1rem 2rem;
     background: var(--lightred);
-    opacity: 0.8;
     color: white;
     border-radius: 2px;
+}
+
+.hp-cbooks-title:hover {
+    background: var(--backgroundcolor);
+    color: black;
 }
 
 .contactgrid {

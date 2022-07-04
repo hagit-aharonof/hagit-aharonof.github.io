@@ -98,7 +98,7 @@ h4 {
     width: 200px;
     height: auto;
     box-shadow: var(--shadow);
-    border-radius: 20px;
+    border-radius: 2px;
 }
 
 .h3-link {
