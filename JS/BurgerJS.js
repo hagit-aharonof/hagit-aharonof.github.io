@@ -14,13 +14,13 @@ function displayWindowSize() {
         classnavigation();
         checkwidth = false;
         navburger.style.display = "grid";
-        document.getElementById("totopbtn").style.display = "none";
+        document.getElementById("totop").style.display = "none";
     } else {
         if(myWidth <= 1360) {
             classnavigationabslt();
             checkwidth = true;
             navburger.style.display = "none";
-            document.getElementById("totopbtn").style.display = "block";
+            document.getElementById("totop").style.display = "block";
         }
     }
 };
@@ -39,13 +39,9 @@ function checkburger() {
 
 function classnavigation() {
     var navburger = document.getElementById("navigation");
-    if(navburger != null) {
-        navburger.className = "navigation";
-    }
+    navburger.className = "navigation";
 }
 function classnavigationabslt() {
     var navburger = document.getElementById("navigation");
-    if(navburger != null) {
-        navburger.className = "navigationabslt";
-    }
+    navburger.className = "navigationabslt";
 }
