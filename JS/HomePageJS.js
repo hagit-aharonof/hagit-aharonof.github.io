@@ -33,3 +33,8 @@ function create_doc_viewer(pdf_file) {
                     </html>`
   new_win.document.write(html_to_write);
 }
+
+function refresh_and_go(url) {
+  location.reload()
+  location.href = url;
+}
